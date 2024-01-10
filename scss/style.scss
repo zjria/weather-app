@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none
+}
+
+$color-white: #FFF;
+$color-red: #a23232;
+
+.container {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    row-gap: 20px;
+
+    div {
+        input {
+            min-width: 300px;
+            padding: 8px 17px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+
+        button {
+            padding: 8px 17px;
+            font-size: 20px;
+            color: $color-white;
+            background-color: $color-red;
+            border: 1px solid goldenrod;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:focus,
+            &:hover {
+                background-color: rgb(60, 60, 54);
+            }
+
+
+
+            &:active,
+            &:hover,
+            &:focus-visible,
+            &:focus-within,
+            &:target,
+            &:visited {
+                outline: none;
+            }
+
+        }
+    }
+}
